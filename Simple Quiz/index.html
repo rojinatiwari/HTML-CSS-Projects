@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a simple Quiz</title>
+    <meta name="description" content="quiz">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img  src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo" alt="freeCodeCamp">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info">INFO</a></li>
+            <li><a href="#html-questions">HTML</a></li>
+            <li><a href="#css-questions">CSS</a></li>
+            </ul>  
+        </nav>
+    </header>
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">student-info</h2>
+                <div class="info"> <label for="student's name">student's name</label> <input name="student's name" id="student's name" ></div>
+                <div  class="info"><label for="email address">email address</label> <input name="email" type="email" id="email address"></div>
+                <div  class="info"><label for="date of birth">D.O.B. <span class="sr-only">date of birth</span></label> <input name="date of birth" type="date" id="date of birth"></div>
+            </section>
+            <section role="region"aria-labelledby="html-questions">
+                <h2 id="html-questions">
+                   
+                    HTML
+
+                </h2>
+                <div class="question-block"><p>1</p><fieldset  name="question" class="question">
+                    <legend> true/false</legend>
+                    <ul class="answers-list">
+                        <li><label for="q1-a1"></label><input type="radio" name="" id="q1-a1"></li>
+                        <li><label for="q1-a2"></label><input type="radio" name="" id="q1-a2"></li>
+                    </ul>
+                </fieldset>
+                
+                <div class="question-block"><p>2</p><fieldset name="question" class="question">
+                    <legend> true/false</legend>
+                    <ul class="answers-list">
+                        <li><label for=""></label><input type="radio" name="" id="q2-a1"></li>
+                        <li><label for=""></label><input type="radio" name="" id="q2-a2"></li>
+                    </ul>
+                </fieldset></div></section>
+            <section role="region"aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS</h2>
+            </section>
+
+        </form>
+        
+    </main>
+    
+</body>
+</html>
